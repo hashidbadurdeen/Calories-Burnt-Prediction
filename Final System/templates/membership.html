@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewreport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Calories Burnt Prediction
+	</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../static/cs/membership.css" />
+</head>
+<body>
+	<div class="container-fluid banner">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-md">
+					<div class="navbar-brand">MEMBERSHIP DETAILS</div>
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('home') }}">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Membership</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('prediction') }}">Prediction</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('about') }}">About</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-8 offset-md-2 info">
+			<table style="width:100%">
+				<tr>
+				  <th>BASIC</th>
+				  <th>INDIVIDUAL - FEMALE</th>
+				  <th>INDIVIDUAL- MALE</th>
+				  <th>STUDENT</th>
+				  <th>FAMILY</th>
+				</tr>
+				<tr>
+				  <td>LKR 6000<br>Per Month<br>Monthly package<br>For any each person.</td>
+				  <td>LKR 19800<br>Per Year<br>Yearly package for Females.<br> Best Price rates ever!</td>
+				  <td>LKR 23800<br>Per Year<br>Yearly package for Females.<br> Best Price rates ever!</td>
+				  <td>LKR 16000<br>Per Year<br>Yearly package for Females.<br> Best Price rates ever!</td>
+				  <td>LKR 39500<br>Per Year<br>Yearly package for Females.<br> Best Price rates ever!</td>
+				</tr>
+				  <th><button class="btn btn-primary btn-small no-underline">BUY NOW!</button></th>
+				  <th><button class="btn btn-primary btn-small no-underline">BUY NOW!</button></th>
+				  <th><button class="btn btn-primary btn-small no-underline">BUY NOW!</button></th>
+				  <th><button class="btn btn-primary btn-small no-underline">BUY NOW!</button></th>
+				  <th><button class="btn btn-primary btn-small no-underline">BUY NOW!</button></th>
+			  </table>
+			</div>
+		</div>
+			<p class="u-align">© Copyrights 2023 (St20251867_CL/BSCSD/24/27) - Hashid Badurdeen</p>
+		</div>
+	</div>
+</body>
+</html>

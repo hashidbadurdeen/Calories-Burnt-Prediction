@@ -1,0 +1,59 @@
+body{
+	margin:0;
+	padding:0;
+	background:#fff;
+	font-family: 'Raleway',sans-serif;
+	color: #fff;
+}
+.banner{
+	height: 100vh;
+	width: 100%;
+	background:url('overlay.png'),url('home.jpg');
+	background-position: top;
+	background-size:cover;
+	/*background-attachment: fixed;*/
+	background-repeat: no-repeat;
+}
+.banner .navbar{
+	margin-top:4%;
+}
+.banner .navbar-brand{
+	color: #ffffff;
+	font-size:1.8em;
+	letter-spacing:0.2em;
+	font-weight: 700;
+	margin-left: 10%;
+}
+.banner .nav{
+	margin-right:10%; 
+}
+.banner .nav li a{
+	color:#aaa;
+	font-size: 1.2em;
+}
+.banner .info{
+	margin-top:15%;
+	transform: translateY(-15%);
+}
+.banner .info h1{
+	font-size: 2.5em;
+	font-family: 'Times New Roman';
+	font-weight: 700;
+	color: #e6d644;
+	letter-spacing: 2px;
+}
+.banner .info p{
+	font-size: 1em;
+	font-family: 'Lucida Sans';
+	font-weight: 800;
+	color: #fffcb2;
+	letter-spacing: 2px;
+}
+
+.u-align{
+	color:#fff;
+	text-align-last: center;
+	font-size: 1.2em;
+	margin-top:15%;
+}
+

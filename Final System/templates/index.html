@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Calories Burnt Prediction</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ 
+ <div class="login">
+  <div class = 'content'>
+    <div class = "heading">
+      <h1>CALORIES PREDICTION</h1>
+    </div>
+	
+  
+
+    <form action="{{ url_for('predict') }}" method="post">
+      <div class ='InsideContent'>
+
+          <div class = 'block'>
+            <label>Gender:</label>
+                <select name="Gender" id="dropdownblock" style="width: 80px;">
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select>
+          </div>
+          <div class = 'block'>
+                <label>Age:</label>
+                <input type="text" name="Age" placeholder="Enter your age" size="80" required="required" />
+          </div>
+          <div class = 'block'>
+                <label>Height:</label>
+        		    <input type="text" name="Height" placeholder="Enter your height(cm)" size="80" required="required" />
+          </div>
+          <div class = 'block'>
+            <label>Weight:</label>
+            <input type="text" name="Weight" placeholder="Enter your weight(kg)" size="80" required="required" />
+          </div>
+          <div class = 'block'>
+            <label>Duration:</label>
+            <input type="text" name="Duration" placeholder="Enter your duration(min)" size="80" required="required" />
+          </div>  
+          <div class = 'block'>
+            <label>Heart_Rate:</label>
+            <input type="text" name="Heart_Rate" placeholder="Enter your heart rate" size="80" required="required" />
+          </div>          
+          <div class = 'block'>
+            <label>Body_Temp:</label>
+            <input type="text" name="Body_Temp" placeholder="Enter your body_temp(°C)" size="80" required="required" />
+          </div>
+          <div class = 'block'>
+                <label>Exercise_Type:</label>
+                    <select name="Exercise_Type" id="dropdownblock" style="width: 80px;">
+                    <option value="0">Cardio</option>
+                    <option value="1">Machine</option>
+                </select>
+          </div>
+      </div>
+      <br>
+      <br>
+           <button type="submit" class="btn btn-primary btn-block btn-large" id="btnp">CALORIE BURNT</button>
+           <br>
+           <a href="{{ url_for('login') }}" class="btn btn-primary btn-block btn-large no-underline" id="btnp">LOGOUT</a>
+    </form>
+  <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>

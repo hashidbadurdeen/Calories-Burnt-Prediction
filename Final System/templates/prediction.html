@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewreport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Calories Burnt Prediction
+	</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../static/cs/index.css" />
+</head>
+<body>
+	<div class="container-fluid banner">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-md">
+					<div class="navbar-brand">LET'S BEGIN THE PREDICTION</div>
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('home') }}">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('membership') }}">Membership</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Prediction</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('about') }}">About</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-8 offset-md-2 info">
+				<h1 class="text-center">CALORIES PREDICTION SYSTEM</h1>
+				<p class="text-center">
+					A Quick and Efficient Way to Analyze your Calories Burnt
+				</p>
+				<a href="{{ url_for('login') }}" class="btn btn-md text-center">GET STARTED</a>
+			</div>
+		</div>
+		<p class="u-align">© Copyrights 2023 (St20251867_CL/BSCSD/24/27) - Hashid Badurdeen</p>
+	</div>
+</body>
+</html>

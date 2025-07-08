@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewreport" content="width=device-width, initial-scale=1.0">
+	<title>
+		Calories Burnt Prediction
+	</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../static/cs/contact.css" />
+</head>
+<body>
+	<div class="container-fluid banner">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-md">
+					<div class="navbar-brand">CONTACT</div>
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('home') }}">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('membership') }}">Membership</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('prediction') }}">Prediction</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('about') }}">About</a>
+						</li>
+					</ul>
+				</nav>
+			<div class="row">
+				<div class="col-md-8 offset-md-2 info">
+				<div class="column">
+				  <h2>LOCATION</h2>
+				  <p1>No. 177 Baseline RD, Dematagoda, Colombo 09</p1>
+				  <br>
+				  <br>
+				  <br>
+				  <br>
+				  <h3>CONTACT</h3>
+				  <p2>Landline - 011 254 1587</p2>
+				  <br>
+				  <p3>Mobile - +94 77 254 1587 / +94 77 424 2289</p3>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+				</div>
+				<div class="column">
+				  <form class="register" action="/add_feedback" method="post">
+					<h2 class="title">FEEDBACK FORM</h2>
+					<div class="form-group">
+						<label for="Name">Name</label>
+						<div class="input-group">
+							<input type="text" id="username" placeholder="Username" name="username" required>
+							<i class='bx bx-envelope'></i>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<div class="input-group">
+							<input type="email" id="email" placeholder="Email address" name="email" required>
+							<i class='bx bx-envelope'></i>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="password">Feedback</label>
+						<div class="input-group">
+							<input type="feedback" id="feedback" placeholder="Feedback" name="feedback" required>
+							<i class='bx bx-lock-alt' ></i>
+						</div>
+					</div>
+					<button type="submit" class="btn-submit">Register</button>
+				</div>
+			  </div>
+			</div>
+		</div>
+		</div>
+		<p class="u-align">© Copyrights 2023 (St20251867_CL/BSCSD/24/27) - Hashid Badurdeen</p>
+		</div>
+</body>
+</html>

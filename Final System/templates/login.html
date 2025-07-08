@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+	<title>Login And Register Form</title>
+</head>
+<body>
+		<div class="container">
+			<form class="login active" action="login_validation" method="post">
+			<h2 class="title">Login With Your Account</h2>
+			<div class="form-group">
+				<label for="name">Name</label>
+				<div class="input-group">
+					<input type="text" id="name" placeholder="Username" name="name" required>
+					<i class='bx bx-envelope'></i>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<div class="input-group">
+					<input type="password" id="password" placeholder="Your password" name="password" required>
+					<i class='bx bx-lock-alt' ></i>
+				</div>
+			</div>
+			<button type="submit" class="btn-submit">LOGIN</button>
+			<p>I don't have an Account. <a href="#" onclick="switchForm('register', event)">Register</a></p>
+			<p>Take Me Back to Homepage. <a href="{{ url_for('home') }}">Home</a></p>
+		</form>
+
+		<form class="register" action="/add_user" method="post">
+			<h2 class="title">Register your account</h2>
+			<div class="form-group">
+				<label for="Name">Name</label>
+				<div class="input-group">
+					<input type="text" id="username" placeholder="Username" name="username" required>
+					<i class='bx bx-envelope'></i>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<div class="input-group">
+					<input type="email" id="email" placeholder="Email address" name="useremail" required>
+					<i class='bx bx-envelope'></i>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<div class="input-group">
+					<input type="password" id="password" placeholder="Your password" name="password" required>
+					<i class='bx bx-lock-alt' ></i>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="Gender">Gender</label>
+				<div class="input-group">
+					<input type="text" id="Gender" placeholder="Gender" name="gender" required>
+					<i class='bx bx-envelope'></i>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="address">Address</label>
+				<div class="input-group">
+					<input type="text" id="address" placeholder="Address" name="address" required>
+					<i class='bx bx-envelope'></i>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="nic">NIC</label>
+				<div class="input-group">
+					<input type="text" id="nic" placeholder="NIC" name="nic" required>
+					<i class='bx bx-envelope'></i>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="number">Phone Number</label>
+				<div class="input-group">
+					<input type="text" id="nic" placeholder="Phone Number" name="number" required>
+					<i class='bx bx-envelope'></i>
+				</div>
+			</div>
+			<button type="submit" class="btn-submit">REGISTER</button>
+			<p>I already have an account. <a href="#" onclick="switchForm('login', event)">Login</a></p>
+			<p>Take Me Back to Homepage. <a href="{{ url_for('home') }}">Home</a></p>
+		</form>
+	</div>
+
+	<script src="../static/script.js"></script>
+</body>
+</html>
